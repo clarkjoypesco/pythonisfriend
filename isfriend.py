@@ -2,15 +2,17 @@
 # takes a string as its input, and
 # returns a Boolean indicating if
 # the input string is the name of
-# a friend. Assume I am friends with
-# everyone whose name starts with D
-# and no one else. You do not need to
-# check for the lower case 'd'
+# a friend. Assume 
+# I am friends with everyone whose name
+# starts with either 'D' or 'N', but no one
+# else. You do not need to check for
+# lower case 'd' or 'n'
+
 
 
 
 def is_friend(s):     
-    return s[0] == 'D'
+    return s[0] == 'D' or s[0] == 'N'
 
 
 
@@ -20,4 +22,11 @@ print is_friend('Diane')
 #>>> True
 
 print is_friend('Fred')
+#>>> False
+
+
+print is_friend('Ned')
+#>>> True
+
+print is_friend('Moe')
 #>>> False
