@@ -11,8 +11,8 @@
 
 
 
-def is_friend(s):     
-    return s[0] == 'D' or s[0] == 'N'
+def is_friend(name):     
+    return name[0] == 'D' or name[0] == 'N'
 
 
 
